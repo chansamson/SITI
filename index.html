@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="d-flex justify-content-center mb-1 b-dashed">
+        <div class="d-flex align-items-center row justify-content-between b-dashed">
+            <figure class="b-dashed">
+                <img src="img\toyota-logo.png" alt="" class="b-dashed"> 
+            </figure>
+            <p class="b-dashed">Toyota IT Inventory System (TITIS)</p>
+        </div>
+    </header>
+
+    <section class="d-flex justify-content-center b-dashed">
+        <div class="row d-flex justify-content-center b-dashed">
+            <div class="b-dashed">
+                <form action="">
+                    <p>Form Title</p>
+                    <p>Insert Form Here</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- <header>
         <div class="logo">
             <div class="toyota-logo"><img src="./img/toyota-logo.png" alt=""></div>
             <div class="logo-title"><p>Toyota IT Inventory System (TITIS)</p></div>
@@ -35,6 +54,51 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
+
+<style>
+* {
+    margin: 0;
+}
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    width: min(95vw,1140px);
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.b-dashed {
+    border: 1px dashed #000;
+    padding: 1rem;
+}
+
+header figure img {
+    width: 100%;
+    max-width: 100px;
+}
+
+</style>
